@@ -30,7 +30,7 @@ class SuspectMessageActivity : AppCompatActivity() {
         adapter = SuspectMessageAdapter(suspectMessages)
         recyclerView.adapter = adapter
 
-        perspectiveClient = PerspectiveClient("AIzaSyBiC9L-5B_BAjnJMx08j45kUezjm_Tyqsc")
+        perspectiveClient = PerspectiveClient("Your_API_KEY")
 
         val username = intent.getStringExtra("username")?.trim()
         if (username.isNullOrEmpty()) {
