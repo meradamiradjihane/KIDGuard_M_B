@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "344542651933",
+    "firebase_url": "https://kidguard-3e815-default-rtdb.firebaseio.com",
+    "project_id": "kidguard-3e815",
+    "storage_bucket": "kidguard-3e815.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:344542651933:android:f6d876e195e8bae3aac8f4",
+        "android_client_info": {
+          "package_name": "com.example.kidguard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "344542651933-tq69077hkkjrt6tburqk566gmhmvd17u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kidguard",
+            "certificate_hash": "d84fb1854b4d77c23435e96ca4435db95da96667"
+          }
+        },
+        {
+          "client_id": "344542651933-uphjnbokbamcjnt6l7ofeb0l8t4jldgn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDL8nRLVJc6P1PTs3UcxoyEqOjs3u-Asb0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "344542651933-uphjnbokbamcjnt6l7ofeb0l8t4jldgn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

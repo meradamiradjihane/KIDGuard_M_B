@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:fontFamily="sans-serif"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/editTextNomTache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nom de la tâche"
+        android:inputType="textCapWords"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/editTextHeureTache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Heure (ex: 14:30)"
+        android:inputType="time"
+        android:padding="12dp"
+        android:layout_marginTop="12dp" />
+
+</LinearLayout>
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorBackground">#E5F0F4</color>
+    <color name="colorPrimary">#153E5C</color>
+    <color name="white">#FFFFFF</color>
+    <color name="rouge">#F15C5C</color>
+    <color name="Boucle">#A3D3E6</color>
+    <color name="fond">#E5F0F4</color>
+    <color name="gris">#F0F0F0</color>
+    <color name="gri">#C6CCD3</color>
+
+
+</resources>

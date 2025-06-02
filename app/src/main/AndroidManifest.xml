@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kidguard"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KidGuard"
+        tools:targetApi="31">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBiC9L-5B_BAjnJMx08j45kUezjm_Tyqsc" />
+
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".AuthentificationEnfantActivity" android:exported="true" />
+        <activity android:name=".EnfantActivity" android:exported="true" />
+        <activity android:name=".MessagesActivity" android:exported="true" />
+        <activity android:name=".ChatActivity" android:exported="true" />
+        <activity android:name=".AgendaActivity" android:exported="true" />
+        <activity android:name=".EcouteActivity" android:exported="true" />
+        <activity android:name=".TempsEcranActivity" android:exported="true" />
+        <activity android:name=".AuthentificationParentActivity" android:exported="true" />
+        <activity android:name=".ParentActivity" android:exported="true" />
+        <activity android:name=".ChildDetailActivity" android:exported="true" />
+        <activity android:name=".GeolocalisationActivity" android:exported="true" />
+        <activity android:name=".HistoriqueActivity" android:exported="true" />
+        <activity android:name=".SecurityzoneActivity" android:exported="true" />
+        <activity android:name=".SuspectMessageActivity" android:exported="true" />
+        <activity android:name=".EnfantRecordingActivity" android:exported="true"/>
+        <activity android:name=".NotificationActivity" android:exported="true"/>
+
+        <service
+            android:name=".LocationService"
+            android:enabled="true"
+            android:exported="true"
+            android:foregroundServiceType="location" />
+
+        <service
+            android:name=".ScreenBlockService"
+            android:enabled="true"
+            android:exported="false" />
+
+
+
+        <activity
+            android:name=".ScreenBlockActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:noHistory="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <receiver
+            android:name=".BootReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

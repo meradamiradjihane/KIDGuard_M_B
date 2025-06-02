@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6F0FA"
+    android:fontFamily="sans-serif">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#153E5C">
+
+        <ImageButton
+            android:id="@+id/messageButton"
+            android:layout_width="53dp"
+            android:layout_height="44dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="18dp"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:contentDescription="Messages"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_message" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="-10dp"
+        android:layout_marginTop="-10dp"
+        android:contentDescription="Logo"
+        android:src="@drawable/ic_user_shield" />
+
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/ic_profile"
+        android:background="@drawable/circle_background"
+        android:scaleType="centerCrop"
+        android:contentDescription="Profile Image" />
+
+    <TextView
+        android:id="@+id/userNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="ENFANT"
+        android:textColor="#153E5C"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/editTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/userNameTextView"
+        android:layout_centerHorizontal="true"
+        android:text="Modifier"
+        android:textColor="#666666"
+        android:textSize="14sp"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <Button
+        android:id="@+id/agendaButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#153E5C"
+        android:text="AGENDA"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextView"
+        android:layout_marginTop="109dp"
+        android:backgroundTint="#153E5C"
+        android:text="DÉCONNEXION"
+        android:layout_marginLeft="55dp"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sosButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/sos_button_background"
+        android:text="OK"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+
+> Task :app:dependencies
+
+------------------------------------------------------------
+Project ':app'
+------------------------------------------------------------
+
+implementation - Implementation only dependencies for 'main' sources. (n)
++--- com.google.firebase:firebase-bom:33.14.0 (n)
++--- com.squareup.okhttp3:okhttp:4.9.3 (n)
++--- com.google.firebase:firebase-analytics (n)
++--- com.google.firebase:firebase-auth-ktx (n)
++--- com.google.firebase:firebase-firestore-ktx (n)
++--- com.google.android.gms:play-services-location:21.3.0 (n)
++--- com.google.android.gms:play-services-maps:19.2.0 (n)
++--- com.google.android.libraries.places:places:4.2.0 (n)
++--- com.github.bumptech.glide:glide:4.15.1 (n)
++--- org.jetbrains:annotations:23.0.0 (n)
++--- androidx.core:core-ktx:1.10.1 (n)
++--- androidx.appcompat:appcompat:1.6.1 (n)
++--- com.google.android.material:material:1.10.0 (n)
++--- androidx.activity:activity:1.8.0 (n)
++--- androidx.constraintlayout:constraintlayout:2.1.4 (n)
++--- androidx.credentials:credentials:1.5.0 (n)
++--- androidx.credentials:credentials-play-services-auth:1.5.0 (n)
++--- com.google.android.libraries.identity.googleid:googleid:1.1.1 (n)
++--- com.google.firebase:firebase-storage-ktx:21.0.2 (n)
++--- androidx.room:room-compiler:2.7.1 (n)
+\--- androidx.room:room-common-jvm:2.7.1 (n)
+
+(n) - A dependency or dependency configuration that cannot be resolved.
+
+A web-based, searchable dependency report is available by adding the --scan option.
+
+BUILD SUCCESSFUL in 543ms
+1 actionable task: 1 executed
